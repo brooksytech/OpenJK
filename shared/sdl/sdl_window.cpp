@@ -71,23 +71,15 @@ typedef struct vidmode_s
 } vidmode_t;
 
 const vidmode_t r_vidModes[] = {
-    { "Mode  0: 320x240",		320,	240 },
-    { "Mode  1: 400x300",		400,	300 },
-    { "Mode  2: 512x384",		512,	384 },
-    { "Mode  3: 640x480",		640,	480 },
-    { "Mode  4: 800x600",		800,	600 },
-    { "Mode  5: 960x720",		960,	720 },
-    { "Mode  6: 1024x768",		1024,	768 },
-    { "Mode  7: 1152x864",		1152,	864 },
-    { "Mode  8: 1280x1024",		1280,	1024 },
-    { "Mode  9: 1600x1200",		1600,	1200 },
-    { "Mode 10: 2048x1536",		2048,	1536 },
-    { "Mode 11: 856x480 (wide)", 856,	 480 },
-    { "Mode 12: 2400x600(surround)",2400,600 }
+    { "Mode  0: 480x320",		480,	320 },
+    { "Mode  1: 640x480",		640,	480 },
+    { "Mode  2: 854x480",		854,	480 },
+    { "Mode  3: 960x576",		960,	576 },
+    { "Mode  4: 1920x1152",		1920,	1152 }
 };
 static const int	s_numVidModes = ARRAY_LEN( r_vidModes );
 
-#define R_MODE_FALLBACK (4) // 640x480
+#define R_MODE_FALLBACK (0) // 480x320
 
 qboolean R_GetModeInfo( int *width, int *height, int mode ) {
 	const vidmode_t	*vm;
