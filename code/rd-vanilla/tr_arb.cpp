@@ -187,6 +187,6 @@ void ARB_InitGlowShaders(void) {
 //		const GLubyte *strErr = qglGetString( GL_PROGRAM_ERROR_STRING_ARB );
 		int iErrPos = 0;
 		qglGetIntegerv( GL_PROGRAM_ERROR_POSITION_ARB, &iErrPos );
-		assert( iErrPos == -1 );
+		//assert( iErrPos == -1 );
 	}
 }
