@@ -74,7 +74,7 @@ const vidmode_t r_vidModes[] = {
     { "Mode  0: 480x320",		480,	320 },
     { "Mode  1: 640x480",		640,	480 },
     { "Mode  2: 854x480",		854,	480 },
-    { "Mode  3: 960x576",		960,	576 },
+    { "Mode  3: 1920x1080",		1920,	1080 },
     { "Mode  4: 1920x1152",		1920,	1152 }
 };
 static const int	s_numVidModes = ARRAY_LEN( r_vidModes );
